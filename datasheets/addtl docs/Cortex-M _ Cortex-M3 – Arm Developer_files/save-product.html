@@ -1,0 +1,167 @@
+
+<!-- saved from url=(0069)chrome-extension://jagcajmmjpalllmegmnafdeeijmalefh/save-product.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <script src="chrome-extension://jagcajmmjpalllmegmnafdeeijmalefh/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="chrome-extension://jagcajmmjpalllmegmnafdeeijmalefh/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="chrome-extension://jagcajmmjpalllmegmnafdeeijmalefh/node_modules/bootbox/bootbox.min.js"></script>
+  <script src="chrome-extension://jagcajmmjpalllmegmnafdeeijmalefh/scripts/lib/Helper.js"></script>
+  <!--
+  <script src="bower_components/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+  -->
+
+  <link href="chrome-extension://jagcajmmjpalllmegmnafdeeijmalefh/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style type="text/css">@font-face { font-family: 'Segoe UI Fallback'; src: url(chrome-extension://jagcajmmjpalllmegmnafdeeijmalefh/content/segoeui.ttf); }</style></head>
+
+<body class="save-button-body">
+  <style>
+    * {
+      font-family: 'Segoe UI', 'Segoe UI Fallback', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    body {
+      background-color: transparent;
+      border: 0;
+      overflow: visible;
+    }
+    #widget {
+      height: 35px;
+      top: 5px;
+      right: 5px;
+      background-color: #0078D7;
+      z-index: 9999;
+      border-radius: 18px;
+      position: absolute;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #widget:hover {
+      background-color: #269dff;
+    }
+    .dropdown-save .btn-save {
+      width: 35px;
+      height: 35px;
+      text-align: left !important;
+      color: white !important;
+      background-color: transparent;
+      font-size: 1.8em;
+      padding: 3px;
+      float: left;
+    }
+    .btn-opb {
+      color: white !important;
+      background-color: transparent;
+      padding: 3px;
+      float: left;
+      line-height: 1;
+    }
+    #widget #close {
+      color: #adb9bf;
+      border-left: 1px solid #adb9bf;
+      padding-right: 4px;
+      padding-left: 5px;
+      height: 24px;
+      line-height: 24px;
+      cursor: pointer;
+    }
+    #widget #dropdown-opb {
+      display: none;
+      color: white;
+      border-right: 1px solid #adb9bf;
+      padding-right: 4px;
+      padding-left: 5px;
+      height: 24px;
+      line-height: 24px;
+      cursor: pointer;
+    }
+    #widget:hover #close {
+      color: white;
+      border-left: 1px solid white;
+    }
+    #widget:hover #dropdown-opb {
+      border-right: 1px solid white;
+    }
+    .scrollable-menu {
+      height: auto;
+      max-height: 240px;
+      overflow-x: hidden;
+      width: 200px;
+    }
+    .board-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      vertical-align: top;
+      width: 105px;
+    }
+    .message {
+      color: black;
+      font-weight: bold;
+      padding: 3px 10px;
+    }
+    #new-board-input {
+      height: 24px;
+      width: 79%;
+      display: inline;
+      margin-left: 3px;
+      margin-top: -2px;
+    }
+    .new-board-button {
+      margin-top: -4px;
+      height: 21px;
+    }
+
+    .new-board-plus {
+      padding-bottom: 3px;
+    }
+
+    .board a {
+      overflow: hidden;
+    }
+    .price {
+      font-weight: bold;
+    }
+    .offer-seller-image {
+      width: 16px;
+      height: 16px;
+    }
+    .seller-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      vertical-align: top;
+      width: 108px;
+    }
+  </style>
+  <div id="widget">
+    <div class="dropdown" id="dropdown-opb">
+      <button class="btn btn-opb dropdown-toggle" type="button" id="psa-dropdown-btn-opb" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      hello
+      </button>
+      <ul id="dropdown-menu-opb" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+      </ul>
+    </div>
+    <div class="dropdown dropdown-save" id="dropdown-save">
+      <!-- add data-hover="dropdown" to enable dropdown on hover (buggy)-->
+      <button class="btn btn-save dropdown-toggle" type="button" id="psa-dropdown-btn-save" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" title="Save to Personal Shopping Assistant">
+      <span id="psa-heart" class="glyphicon glyphicon-heart-empty"></span>
+      </button>
+      <ul id="dropdown-menu-save" class="dropdown-menu dropdown-menu-right scrollable-menu" aria-labelledby="dropdownMenu1"><li>
+          <input type="text" class="form-control" id="new-board-input" placeholder="Create new..." maxlength="40">
+          <button class="btn btn-default btn-xs dropdown-toggle new-board-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-plus new-board-plus"></span>
+          </button>
+        </li><li role="separator" class="divider"></li><li class="board"><a href="chrome-extension://jagcajmmjpalllmegmnafdeeijmalefh/save-product.html#"><span class="board-title pull-left">Favorites</span></a></li></ul>
+    </div>
+    <div id="close">X</div>
+  </div>
+  <script src="chrome-extension://jagcajmmjpalllmegmnafdeeijmalefh/scripts/save-frame.js"></script>
+
+
+</body></html>

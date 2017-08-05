@@ -1,0 +1,136 @@
+﻿input.fix-submit {
+    display: none;
+}
+
+ul.errorreport {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.errorreport li.errors {
+    color: darkred;
+    font-size: smaller;
+}
+
+ul.errorreport li.warnings {
+    color: goldenrod;
+    font-size: smaller;
+}
+
+li.errors > span, li.warnings > span {
+    font-weight: bold;
+}
+
+.CoveoPager ul li > a {
+    line-height: 15px;
+}
+
+.coveo-page-editor-editing .CoveoFacet.coveo-empty, .coveo-page-editor-editing .CoveoFacetRange.coveo-empty, .coveo-page-editor-editing .CoveoFacetRange.coveo-disabled-empty {
+    display: block;
+}
+
+.coveo-page-editor-editing .result-template {
+    /* Upon moving the search component multiple times in the page editor, Sitecore moves 
+        the result template script outside the search component and sets its display style 
+        to block. The following fixes this issue in the page editor. */
+    display: none !important;
+}
+
+.coveo-page-editor-editing .coveo-sort-section {
+    height: 15px;
+}
+
+.coveo-page-editor-editing .coveo-sort-section .scEmptyPlaceholder {
+    height: inherit;
+}
+
+.coveo-page-editor-editing .pageEditorSearchBoxExtension {
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Fixes for the Infinite scroll behaviour */
+html, body {
+    padding:0;
+}
+
+#coveo-center-column {
+    text-align: left;
+    margin: auto;
+}
+
+.CoveoSearchInterface .coveo-results-section .coveo-results-column {
+    padding-right: 15px;
+}
+
+.CoveoSearchInterface .coveo-results-section .coveo-results-column.float-right {
+    float: right;
+}
+
+.CoveoSearchInterface .coveo-results-section .coveo-results-column.coveo-searchBox-column {
+    padding-top: 2px;
+    padding-bottom: 13px;
+}
+
+.CoveoBreadcrumb .coveo-clear-all {
+    margin-top:-8px;
+}
+
+.coveo-logo-column {
+    padding-top: 1px;
+    padding-bottom: 18px;
+    height: 63px;
+}
+
+.coveo-logo {
+    margin: 8px 20px 13px 0;
+}
+
+/* Hide the result list header when nothing to display and not editing the page. */
+.CoveoSearchInterface:not(.coveo-page-editor-editing) .coveo-results-section .coveo-results-column .coveo-results-header.coveo-empty {
+    display: none;
+}
+
+/* Apply the same style from the js ui for custom facets */
+.CustomFacet {
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.CustomFacet .coveo-header {
+    padding:5px 0;
+}
+
+.CustomFacet .coveo-header .coveo-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #39465d;
+    padding-top: 2px;
+}
+
+.CustomFacet .coveo-header > .coveo-icon {
+    float: left;
+    margin: 2px 5px 0 3px;
+    width: 16px;
+}
+
+.coveo-sort-section > div {
+    display: inline-block;
+    height: 35px; 
+}
+
+/* Fix default display for IE9/8 */
+.CoveoResult table.CoveoFieldTable th {
+    width: 100px;
+}
+
+#coveoWebCrawlerFieldName {
+    font-weight: bold;
+}
+
+.CoveoServerError {
+    background-color: #f7f7f7;
+    padding: 10px;
+}

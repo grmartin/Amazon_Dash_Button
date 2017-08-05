@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://developer.arm.com/products/processors/cortex-m/cortex-m3 -->
+<html class="page page--has-header  js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><!--[if IE 9]><html class="page page--has-header no-js ie9" lang="en"><![endif]--><!--[if lte IE 8]><html class="page page--has-header no-js ie8 ie-older-version" lang="en"><![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta class="foundation-mq-small"><meta class="foundation-mq-small-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-large"><meta class="foundation-mq-large-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xxlarge"><meta class="foundation-data-attribute-namespace">
+    <title>Cortex-M | Cortex-M3 – Arm Developer</title>
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="en" http-equiv="content-language">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ARM Ltd.">
+    <meta name="description" content="The ARM Cortex-M3 processor is the industry-leading 32-bit processor for highly deterministic real-time applications, specifically developed to enable partners to develop high-performance low-cost platforms for a broad range of devices">
+    <meta name="keywords" content="Cortex-M3">
+    <meta content="Copyright © 1995-2017 Arm Limited (or its affiliates). All rights reserved." name="copyright">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-config" content="/shared/common/img/favicon/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="/shared/common/img/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="server" content="RMPDCD06">
+
+    <meta property="og:title" content="Cortex-M | Cortex-M3 – Arm Developer">
+    <meta property="og:description" content="The ARM Cortex-M3 processor is the industry-leading 32-bit processor for highly deterministic real-time applications, specifically developed to enable partners to develop high-performance low-cost platforms for a broad range of devices including microcontrollers, automotive body systems, industrial control systems and wireless networking and sensors. The processor delivers outstanding computational performance and exceptional system response to events while meeting the challenges of low dynamic and static power constraints. The processor is highly configurable enabling a wide range of implementations from those requiring memory protection and powerful trace technology to cost sensitive devices requiring minimal area.
+">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="ARM Developer">
+    <meta property="og:url" content="https://developer.arm.com/products/processors/cortex-m/cortex-m3">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+
+    <meta property="article:author" content="ARM Ltd.">
+    <meta property="article:publisher" content="ARM Ltd.">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="ARM Developer">
+    <meta name="twitter:title" content="Cortex-M | Cortex-M3 – Arm Developer">
+    <meta name="twitter:description" content="The ARM Cortex-M3 processor is the industry-leading 32-bit processor for highly deterministic real-time applications, specifically developed to enable partners to develop high-performance low-cost platforms for a broad range of devices including microcontrollers, automotive body systems, industrial control systems and wireless networking and sensors. The processor delivers outstanding computational performance and exceptional system response to events while meeting the challenges of low dynamic and static power constraints. The processor is highly configurable enabling a wide range of implementations from those requiring memory protection and powerful trace technology to cost sensitive devices requiring minimal area.
+">
+    <meta name="twitter:url" content="https://developer.arm.com/products/processors/cortex-m/cortex-m3">
+
+    <meta itemprop="name" content="Cortex-M | Cortex-M3 – Arm Developer">
+    <meta itemprop="description" content="The ARM Cortex-M3 processor is the industry-leading 32-bit processor for highly deterministic real-time applications, specifically developed to enable partners to develop high-performance low-cost platforms for a broad range of devices including microcontrollers, automotive body systems, industrial control systems and wireless networking and sensors. The processor delivers outstanding computational performance and exceptional system response to events while meeting the challenges of low dynamic and static power constraints. The processor is highly configurable enabling a wide range of implementations from those requiring memory protection and powerful trace technology to cost sensitive devices requiring minimal area.
+">
+
+    
+<meta name="VIcurrentDateTime" content="636374911635888009">
+<script type="text/javascript" async="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/cool-2.1.15.min.js"></script><script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/774089972657587" async=""></script><script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/164006014131889" async=""></script><script async="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/fbevents.js"></script><script type="text/javascript" async="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/roundtrip.js"></script><script type="text/javascript" async="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/uwt.js"></script><script type="text/javascript" async="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/insight.min.js"></script><script type="text/javascript" async="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/analytics.js"></script><script type="text/javascript" async="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/munchkin.js"></script><script async="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/gtm.js"></script><script type="text/javascript" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/VisitorIdentification.js"></script>
+
+
+    <!--[if (gt IE 9)]><!-->
+    <link rel="stylesheet" type="text/css" href="./Cortex-M _ Cortex-M3 – Arm Developer_files/common.css">
+    <link rel="stylesheet" type="text/css" href="./Cortex-M _ Cortex-M3 – Arm Developer_files/app.css">
+    
+    <!--<![endif]-->
+
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="/shared/developer.arm.com/css/app-ie9-blessed1.css?v=985B4224C5848CBB2EF882BE0E5A75E6"/>
+        <link rel="stylesheet" type="text/css" href="/shared/developer.arm.com/css/app-ie9.css?v=985B4224C5848CBB2EF882BE0E5A75E6"/>
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" type="text/css" href="/shared/developer.arm.com/css/app-ie8-blessed1.css?v=985B4224C5848CBB2EF882BE0E5A75E6"/>
+        <link rel="stylesheet" type="text/css" href="/shared/developer.arm.com/css/app-ie8.css?v=985B4224C5848CBB2EF882BE0E5A75E6"/>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+<link rel="apple-touch-icon" sizes="57x57" href="https://developer.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=2.0.4.5336">
+<link rel="apple-touch-icon" sizes="60x60" href="https://developer.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=2.0.4.5336">
+<link rel="apple-touch-icon" sizes="72x72" href="https://developer.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=2.0.4.5336">
+<link rel="apple-touch-icon" sizes="76x76" href="https://developer.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=2.0.4.5336">
+<link rel="apple-touch-icon" sizes="114x114" href="https://developer.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=2.0.4.5336">
+<link rel="apple-touch-icon" sizes="120x120" href="https://developer.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=2.0.4.5336">
+<link rel="apple-touch-icon" sizes="144x144" href="https://developer.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=2.0.4.5336">
+<link rel="apple-touch-icon" sizes="152x152" href="https://developer.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=2.0.4.5336">
+<link rel="apple-touch-icon" sizes="180x180" href="https://developer.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=2.0.4.5336">
+<link rel="icon" type="image/png" href="https://developer.arm.com/shared/common/img/favicon/favicon-32x32.png?v=2.0.4.5336" sizes="32x32">
+<link rel="icon" type="image/png" href="https://developer.arm.com/shared/common/img/favicon/favicon-48x48.png?v=2.0.4.5336" sizes="48x48">
+<link rel="icon" type="image/png" href="https://developer.arm.com/shared/common/img/favicon/android-chrome-192x192.png?v=2.0.4.5336" sizes="192x192">
+<link rel="icon" type="image/png" href="https://developer.arm.com/shared/common/img/favicon/android-chrome-256x256.png?v=2.0.4.5336" sizes="256x256">
+<link rel="icon" type="image/png" href="https://developer.arm.com/shared/common/img/favicon/favicon-16x16.png?v=2.0.4.5336" sizes="16x16">
+<link rel="shortcut icon" type="image/ico" href="https://developer.arm.com/shared/common/img/favicon/favicon.ico?v=2.0.4.5336">
+<link rel="manifest" href="https://developer.arm.com/shared/common/img/favicon/manifest.json?v=2.0.4.5336">
+    <link rel="search" type="application/opensearchdescription+xml" title="ARM Developer" href="https://developer.arm.com/opensearch.xml">
+
+    
+    
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K25LQR');</script>
+<!-- End Google Tag Manager -->
+
+
+<style></style><meta class="foundation-mq-topbar"><link rel="stylesheet" type="text/css" href="./Cortex-M _ Cortex-M3 – Arm Developer_files/VisitorIdentificationCSS.aspx"><script async="true" type="text/javascript" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/UDPRFCNPWJAFHNBKMUSDPA"></script><div style="width: 1px; height: 1px; display: inline; position: absolute;"><img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out"><img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out(1)"><img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out(2)"><img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out(3)"><img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out(4)"></div><script type="text/javascript" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/sendrolling.js"></script><div style="width: 1px; height: 1px; display: inline; position: absolute;"><img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out(5)">
+<img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out(6)">
+<img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out(7)">
+<img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out(8)">
+<img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out(9)">
+<img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out(10)">
+<img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out(11)">
+<img height="1" width="1" style="border-style:none;" alt="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/out(12)">
+</div><style type="text/css">/* This is not a zero-length file! */</style><style type="text/css">/* This is not a zero-length file! */</style><style type="text/css" id="kampyleStyle">.noOutline{outline: none !important;}.wcagOutline:focus{outline: 2px solid #004ccb !important;outline-offset: 2px;transition: none;}.kampyle_vertical_button { background-color:transparent !important;font-family:"Open Sans",sans-serif;cursor:pointer;position:fixed;top:45%;z-index:99999990;height:35px !important;min-height: 35px !important;max-height: 35px !important;width:125px !important;max-width: 125px !important;min-width: 125px !important;-ms-transform:rotate(90deg);-webkit-transform:rotate(90deg);transform:rotate(90deg) } .kampyle_vertical_button .kampyle_button { height:35px;min-height: 35px !important;max-height: 35px !important;width:125px !important;min-width: 125px !important;max-width: 125px !important; background:#00a960;color:#ffffff;position:absolute;top:0;left:0;z-index:-1; } .kampyle_vertical_button .kampyle_button-text { color:#ffffff;font-size:14px;line-height:35px;text-align:center;font-weight:normal !important; } .kampyle_vertical_button.kampyle_left .kampyle_button { -webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;-ms-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0; } .kampyle_vertical_button.kampyle_right { right:-45px; } .kampyle_vertical_button.kampyle_left { left:-45px } .kampyle_vertical_button.kampyle_right .kampyle_button { -webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;-ms-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px } .kampyle_vertical_button.kampyle_right, .kampyle_vertical_button.kampyle_left  { padding: 0 !important; }</style><link rel="stylesheet" type="text/css" href="./Cortex-M _ Cortex-M3 – Arm Developer_files/VIChecker.aspx"></head>
+<body>
+    
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    &lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K25LQR"
+            height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+    <div class="c-feedback-message-container u-no-print"><style>
+/* Docs top margin fix */
+#content.arm-docs .section-wrapper h1 {
+    padding-top: 0 !important;
+}
+#content.arm-docs .section-wrapper {
+    margin-top: 2em;
+}
+</style>
+<style>
+    .top-bar-section .has-dropdown ul.dropdown a.active {
+      box-shadow: none;
+    }
+</style>
+<div id="modal-welcome" class="reveal-modal" data-reveal="">
+  <p class="lead">ARM’s developer website includes documentation, tutorials, support resources and more.</p>
+  <p>Over the next few months we will be adding more developer resources and documentation for all the products and technologies that ARM provides.</p>
+  <a class="close-reveal-modal button" style="position: relative; float: right; color: white; font-size: 1em;">Close</a>
+</div>
+
+<!-- Hot fix for accordion icons -->
+<style>
+.accordion .accordion-navigation > a .accordion-icon:before {
+    content: "\f196" !important;
+}
+.accordion .accordion-navigation.active > a .accordion-icon:before {
+    content: "\f147" !important;
+}
+.accordion .accordion-navigation > a .accordion-icon {
+    font-size: 1em !important;
+    vertical-align: 0 !important;
+}
+</style></div>
+
+    
+    
+
+    
+    
+
+<div class="c-skip-navigation u-no-print">
+    <a href="https://developer.arm.com/products/processors/cortex-m/cortex-m3#content" aria-label="Clik here to skip to Main Content">Skip to Main Content</a>
+    <a href="https://developer.arm.com/products/processors/cortex-m/cortex-m3#footer" aria-label="Clik here to skip to Footer Navigation">Skip to Footer Navigation</a>
+</div>
+
+<div class="c-unsupported-browser-message u-no-print text-center old-ie-version">
+    <p>
+        <strong>
+            Sorry, your browser is not supported. <a href="https://whatbrowser.org/" target="_blank"> We recommend upgrading your browser</a>.
+            We have done our best to make all the documentation and resources available on old versions of Internet Explorer, but vector image support and the layout may not be optimal. Technical documentation is available as a PDF Download.
+        </strong>
+    </p>
+</div>
+
+<noscript>
+    &lt;div class="js-disabled-message u-no-print text-center"&gt;
+        &lt;p&gt;
+            &lt;strong&gt;JavaScript seems to be disabled in your browser.&lt;/strong&gt;&lt;br /&gt;
+            You must have JavaScript enabled in your browser to utilize the functionality of this website.
+        &lt;/p&gt;
+    &lt;/div&gt;
+</noscript>
+
+
+<header class="c-header u-no-print" role="banner">
+    
+<div class="arm-global-menu">
+
+    <!-- START Foundation top bar -->
+    <nav class="top-bar js-mobile-navigation" data-topbar="" role="navigation">
+
+        <!-- START top header -->
+        <div class="global-menu fixed">
+
+            <!-- START Foundation title area -->
+            <ul class="title-area">
+
+                <!-- START ARM logo -->
+                <li class="navigation-dropdown">
+                    <span class="navigation-dropdown-label">
+                        <a href="https://developer.arm.com/">
+                            <span>
+                                <img src="./Cortex-M _ Cortex-M3 – Arm Developer_files/arm-developer.svg" alt="ARM Developer">
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </span>
+                    <ul class="navigation-dropdown-list">
+    <li class="navigation-dropdown-list-item">
+        <a href="https://developer.arm.com/" title="Home"><span><i class="fa fa-home"></i> Home</span></a>
+    </li>
+    <li class="navigation-dropdown-list-divider"><span></span></li>    
+        <li class="navigation-dropdown-list-item">
+            <a href="https://developer.arm.com/embedded" title="Embedded Software Development"><span>Embedded Software Development</span></a>
+        </li>
+        <li class="navigation-dropdown-list-item">
+            <a href="https://developer.arm.com/open-source" title="Linux &amp; Open Source"><span>Linux &amp; Open Source</span></a>
+        </li>
+        <li class="navigation-dropdown-list-item">
+            <a href="https://developer.arm.com/academia" title="Academia"><span>Academia</span></a>
+        </li>
+        <li class="navigation-dropdown-list-item">
+            <a href="https://developer.arm.com/graphics" title="Graphics &amp; Multimedia Development"><span>Graphics &amp; Multimedia Development</span></a>
+        </li>
+        <li class="navigation-dropdown-list-item">
+            <a href="https://developer.arm.com/soc" title="SoC Design"><span>SoC Design</span></a>
+        </li>
+        <li class="navigation-dropdown-list-item">
+            <a href="https://developer.arm.com/hpc" title="High Performance Computing"><span>High Performance Computing</span></a>
+        </li>
+</ul>
+
+                </li>
+
+                
+                <li class="menu">
+    <ul>
+            <li><a class="underline active" href="https://developer.arm.com/products" title="Products">Products</a></li>
+            <li><a class="underline" href="https://developer.arm.com/markets" title="Markets">Markets</a></li>
+            <li><a class="underline" href="https://developer.arm.com/technologies" title="Technologies">Technologies</a></li>
+            <li><a class="underline" href="https://developer.arm.com/support" title="Support">Support</a></li>
+    </ul>
+</li>
+
+
+                
+                <li class="search js-search">
+                    <div id="global-search-box">
+                        <!-- When customizing this component, ensure to use "Coveo.$" instead of the regular jQuery "$" to
+     avoid any conflicts with Sitecore's Page Editor/Experience Editor.  -->
+
+    <link rel="stylesheet" href="./Cortex-M _ Cortex-M3 – Arm Developer_files/CoveoFullSearch.css">
+    <link rel="stylesheet" href="./Cortex-M _ Cortex-M3 – Arm Developer_files/CoveoComponent.css">
+    <link href="./Cortex-M _ Cortex-M3 – Arm Developer_files/search.css" rel="stylesheet">
+
+<script type="text/javascript" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/CoveoJsSearch.WithDependencies.min.js"></script>
+<script type="text/javascript" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/CoveoForSitecorePolyfills.js"></script>
+<script type="text/javascript" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/CoveoForSitecore.js"></script>
+
+
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/CoveoForSitecoreOmniboxResultListFixCursor.js"></script>
+
+
+
+
+    <script type="text/javascript" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/en.js"></script>
+    <script type="text/javascript">
+        //get hidden field
+        Coveo.$(function () {
+            if (typeof (CoveoForSitecore) !== 'undefined') {
+                CoveoForSitecore.componentsOptions = {"analyticsCustomMetadata" : {"sitename" : "website"},"analyticsEndpointUri" : "/coveo/rest/v6/analytics" , "boostExpressions" : "" , "clientLanguageFieldName" : "@fz95xlanguage97125" , "clientLanguageName" : "en" , "defaultSortType" : "" , "defaultSortField" : "" , "defaultSortCriteriaNoSpace" : "Relevancy" , "defaultSortCriteriaLowercase" : "relevancy" , "enableClientSideLogging" : false,"externalCollections" : [],"externalSources" : [],"filterResultsOnCurrentCulture" : true,"hiddenExpression" : " NOT @ftemplateid97125==(\"adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97\",\"fe5dd826-48c6-436d-b87a-7c4210c7413b\") AND @fhaslayout97125 == 1 AND @fz95xpath97125 == \"110d559fdea542ea9c1c8a5df7e70ef9\"" , "indexSourceName" : "Coveo_web_index - DEVELOPER" , "isEditingInPageEditor" : false,"isPreviewingInPageEditor" : false,"isPreviewingInPageEditorWithSimulatedDevice" : false,"latestVersionFieldName" : "@fz95xlatestversion97125" , "pageFullPath" : "/sitecore/content/developer/products/processors/cortex-m/cortex-m3" , "pageName" : "cortex-m3" , "restEndpointUri" : "/coveo/rest" , "searchBoxPlaceholderText" : "" , "sendToSitecoreAnalytics" : true,"sitecoreItemId" : "3f0606ba-9530-4417-a2ab-5febb6e61202" , "sitecoreItemUri" : "sitecore://web/{3F0606BA-9530-4417-A2AB-5FEBB6E61202}?lang=en\u0026ver=13" , "siteName" : "website" , "searchRedirectionUrl" : "/products/processors/cortex-m/cortex-m3/_PageData/_latestfeatures/Feature Block6"};
+                Coveo.$('#globalsearch').coveoForSitecore('initSearchBox', CoveoForSitecore.componentsOptions);
+            } else {
+                Coveo.$('#globalsearch').coveo('initSearchBox',
+                                                           '/products/processors/cortex-m/cortex-m3/_PageData/_latestfeatures/Feature Block6');
+            }
+            Coveo.$('#globalsearch').find("input.CoveoQueryBox").attr("placeholder", '');
+        });
+    </script>
+    <div id="globalsearch" class="CoveoSearchInterface Coveostate CoveoComponentState CoveoComponentOptions CoveoQueryController CoveoDebug" style="display: block;">
+            <div class="CoveoAnalytics" data-user="extranet\Anonymous" data-endpoint="/coveo/rest/coveoanalytics" data-token="a508d279-421b-4c33-8b0c-7bd82e38c5e5" data-search-hub="website" data-send-to-cloud="True">
+            </div>
+        <div class="CoveoSearchBox" data-activate-omnibox="true" data-enable-wildcards="false" data-partial-match-keywords="0" data-enable-partial-match="true" data-partial-match-threshold="10%" data-auto-focus="false">
+            
+        <a class="CoveoSearchButton" href="javascript:"><span class="coveo-icon">Search</span></a><div><input type="text" autocapitalize="off" autocorrect="off" class="CoveoQueryBox" form="coveo-dummy-form" placeholder=""><div class="coveo-omnibox" style="display: none;"></div><span class="coveo-query-box-clear" style="display: none;"><span class="coveo-icon"></span></span></div></div>
+        
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        Coveo.$(function () {
+            CoveoForSitecore.plugin.configureOmnibox({
+                headerTitle: 'Suggested Results',
+                queryExpression: '',
+                numberOfResults: '1',
+                uniqueId: 'globalsearchresults',
+                omniboxDataRowIndex: '51'  
+            });
+        });
+    </script>
+    <script id="globalsearchresults" class="result-template" type="text/x-underscore-template">
+        <div>
+            <a href="{{=clickUri}}" class="coveo-title">{{=title?highlight(title, titleHighlights):''}}</a>
+        </div>
+    </script>
+
+                    </div>
+                </li>
+                
+                
+                
+
+                
+                <li class="menu-icon c-mobile-toggle c-mobile-search-toggle js-mobile-toggle" data-toggle="search">
+                    <a href="https://developer.arm.com/products/processors/cortex-m/cortex-m3#" tabindex="0" title="Search" aria-label="Search" aria-haspopup="true">
+                        <i class="fa fa-search"></i><span class="sr-only">Search</span>
+                    </a>
+                </li>
+
+                
+                
+                
+
+                
+                <li class="menu-icon c-mobile-toggle c-mobile-navigation-toggle js-mobile-toggle" data-toggle="navigation">
+                    <a href="https://developer.arm.com/products/processors/cortex-m/cortex-m3#" tabindex="0" title="Mobile Navigation" aria-label="Mobile Navigation" aria-haspopup="true">
+                        <i class="fa fa-bars"></i><span class="sr-only">Mobile Navigation</span>
+                    </a>
+                </li>
+
+            </ul>
+            <!-- END Foundation title area -->
+
+        </div>
+        <!-- END top header -->
+
+        <!-- START menu container -->
+        
+        <!-- END menu container -->
+
+    <section class="arm-mobile-navigation top-bar-section hide-for-large-up">
+            <ul class="right">
+    <li class="has-dropdown not-click">
+        <a href="https://developer.arm.com/products/processors/cortex-m/cortex-m3#">Main Menu</a>
+        <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="https://developer.arm.com/products/processors/cortex-m/cortex-m3#">Main Menu</a></li>
+                <li><a href="https://developer.arm.com/products">Products</a></li>
+                <li><a href="https://developer.arm.com/markets">Markets</a></li>
+                <li><a href="https://developer.arm.com/technologies">Technologies</a></li>
+                <li><a href="https://developer.arm.com/support">Support</a></li>
+        </ul>
+    </li>
+    <!-- Left Nav Section -->
+<ul class="left"><li><a class="" href="https://developer.arm.com/products/processors/cortex-m">Overview</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m33">Cortex-M33</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m23">Cortex-M23</a></li><li class="has-dropdown not-click"><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m7">Cortex-M7</a><ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="https://developer.arm.com/products/processors/cortex-m/cortex-m7">Cortex-M7</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m7/docs">Documentation</a></li></ul></li><li class="has-dropdown not-click"><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m4">Cortex-M4</a><ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="https://developer.arm.com/products/processors/cortex-m/cortex-m4">Cortex-M4</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m4/docs">Documentation</a></li></ul></li><li class="has-dropdown not-click"><a class="active" href="https://developer.arm.com/products/processors/cortex-m/cortex-m3">Cortex-M3</a><ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="https://developer.arm.com/products/processors/cortex-m/cortex-m3">Cortex-M3</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m3/docs">Documentation</a></li></ul></li><li class="has-dropdown not-click"><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m0-plus">Cortex-M0 Plus</a><ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="https://developer.arm.com/products/processors/cortex-m/cortex-m0-plus">Cortex-M0 Plus</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m0-plus/docs">Documentation</a></li></ul></li><li class="has-dropdown not-click"><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m0">Cortex-M0</a><ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="https://developer.arm.com/products/processors/cortex-m/cortex-m0">Cortex-M0</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m0/docs">Documentation</a></li></ul></li><li><a class="" href="https://developer.arm.com/products/designstart">DesignStart</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/sc000-processor">SC000 Processor</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/sc300-processor">SC300 Processor</a></li></ul>
+</ul>
+
+        </section></nav>
+    <!-- END Foundation top bar -->
+
+</div>
+    <!-- Top Navigation Ends -->
+
+    
+<div id="top-header" class="full-width main-header grey">
+    <div class="row">
+        <div class="large-12 columns">
+            <ul class="breadcrumbs">
+                <li>
+                    <a href="https://developer.arm.com/" title="Home">Home</a>&nbsp;/&nbsp;
+                </li>
+                <li>
+                    <a href="https://developer.arm.com/products" title="Products">Products</a>&nbsp;/&nbsp;
+                </li>
+                <li>
+                    <a href="https://developer.arm.com/products/processors" title="Processors">Processors</a>&nbsp;/&nbsp;
+                </li>
+                <li>
+                    <a href="https://developer.arm.com/products/processors/cortex-m" title="Cortex-M">Cortex-M</a>&nbsp;/&nbsp;
+                </li>
+                <li class="current">
+                    <h1>Cortex-M3</h1>
+                </li>
+</ul>
+
+
+<p>Cortex-M</p>        </div>
+    </div>
+</div>
+
+<!-- TODO: rename "basic-sticky-example" -->
+<div class="sticky-wrapper" style="height: 90px;"><div class="basic-sticky-example show-for-large-up stuck">
+    <div id="middle" class="full-width-nav">
+        <div class="contain-to-grid">
+            <nav class="top-bar mid-navigation" data-topbar="" role="navigation">
+                <ul class="title-area">
+                    <li class="name"></li>
+                    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                    <li class="toggle-topbar menu-icon"><a href="https://developer.arm.com/products/processors/cortex-m/cortex-m3#"><span></span></a></li>
+                </ul>
+                
+            <section class="top-bar-section mid-nav">
+                    <!-- Left Nav Section -->
+<ul class="left"><li><a class="" href="https://developer.arm.com/products/processors/cortex-m">Overview</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m33">Cortex-M33</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m23">Cortex-M23</a></li><li class="has-dropdown not-click"><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m7">Cortex-M7</a><ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="https://developer.arm.com/products/processors/cortex-m/cortex-m7">Cortex-M7</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m7/docs">Documentation</a></li></ul></li><li class="has-dropdown not-click"><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m4">Cortex-M4</a><ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="https://developer.arm.com/products/processors/cortex-m/cortex-m4">Cortex-M4</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m4/docs">Documentation</a></li></ul></li><li class="has-dropdown not-click"><a class="active" href="https://developer.arm.com/products/processors/cortex-m/cortex-m3">Cortex-M3</a><ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="https://developer.arm.com/products/processors/cortex-m/cortex-m3">Cortex-M3</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m3/docs">Documentation</a></li></ul></li><li class="has-dropdown not-click"><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m0-plus">Cortex-M0 Plus</a><ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="https://developer.arm.com/products/processors/cortex-m/cortex-m0-plus">Cortex-M0 Plus</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m0-plus/docs">Documentation</a></li></ul></li><li class="has-dropdown not-click"><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m0">Cortex-M0</a><ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="https://developer.arm.com/products/processors/cortex-m/cortex-m0">Cortex-M0</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/cortex-m0/docs">Documentation</a></li></ul></li><li><a class="" href="https://developer.arm.com/products/designstart">DesignStart</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/sc000-processor">SC000 Processor</a></li><li><a class="" href="https://developer.arm.com/products/processors/cortex-m/sc300-processor">SC300 Processor</a></li></ul>                </section></nav>
+        </div>
+    </div>
+</div></div>
+<div class="page-url">https://developer.arm.com/products/processors/cortex-m/cortex-m3</div></header>
+
+
+<main class="c-component c-content" id="content" role="main">
+    <!-- START ProductItemContent -->
+<div>
+    
+
+<div id="c-bf123edf-719f-407c-83f7-d1d932744086" class="c-widget c-hero c-hero-header has-background-image vector-image" style="background-image: url(&#39;/-/media/Immersive_Texture_RGB.png&#39;)" data-equalizer-watch="">
+    <article class="row">
+        <section class="columns">
+            <h2 class="c-hero__title">Cortex-M3</h2>
+            <h4 class="c-hero__subtitle">The ARM Cortex-M3 processor is the industry-leading 32-bit processor for highly deterministic real-time applications.&nbsp;</h4>
+            <p class="c-hero__description"></p>
+            <div class="c-hero__content"></div>
+            <p></p>
+        </section>
+    </article>
+
+    
+</div>
+<div id="c-3f229047-7506-480b-bcb5-73fb6abf989c" class="c-widget c-generic-content-container">
+    <article class="row">
+        <section class="columns">
+            
+<div id="c-df7474ad-d8ff-448a-8a17-5385b3bfd55b" class="row">
+    <article class="large-8 columns">
+        
+
+<div id="c-a492cf40-ce38-4165-a866-0d4d9abfdffe" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class="">Overview</h2>            <p>The Cortex-M3 processor is specifically developed to enable partners to develop high-performance low-cost platforms for a broad range of devices including microcontrollers, automotive body systems, industrial control systems and wireless networking and sensors.</p>
+<p>ARM DesignStart provides the fastest, simplest, no-risk route to custom silicon success. &nbsp;<a href="https://developer.arm.com/products/designstart">Get free access to design and license the Cortex-M3 and free forum support to accelerate custom SoC development</a>.</p>
+<p> </p>
+        </section>
+    </article>
+</div>
+
+    </article>
+    <article class="large-4 columns">
+        <div class="panel text-center">
+    <h2> Fast access to Cortex-M3</h2>
+    <p>Design and produce a custom SoC with the widely-deployed Cortex-M3 and Cortex-M0 processors, with no upfront license fee.</p>
+    <div class="row">
+        <div class="small-9 medium-10 large-10 small-centered columns">
+            <p><a href="https://developer.arm.com/products/designstart" class="button download-button expand small">Get started with Cortex-M3</a></p>
+            <p><a href="https://developer.arm.com/products/processors/cortex-m/cortex-m0" class="button buy-button secondary small expand">See also the Cortex-M0</a></p>
+            <p></p>
+        </div>
+    </div>
+</div>
+
+    </article>
+</div>
+
+        </section>
+    </article>    
+</div>
+<div id="c-2b309975-5cf6-4bfa-a136-34813f3477d5" class="c-widget c-horizontal-rule-widget">
+    <div class="row">
+        <div class="columns">
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="c-88d9c90e-601d-4c45-886e-d944b3114a2b" class="c-widget" data-deprecated="">
+    <article class="row">
+            <section class="columns medium-4 medium-push-8">
+                <div class="spacing-2"><img src="./Cortex-M _ Cortex-M3 – Arm Developer_files/Cortex-M3.png" alt=""></div>
+            </section>
+        <section class="columns medium-8 medium-pull-4">
+<h2 class="">Key benefits</h2>            <ul><li>Design the most optimal System-On-Chip with a processor that has the perfect balance between area, performance and power with comprehensive system interfaces and integrated debug and trace components.</li>
+    <br>
+    <li>Develop solutions for a large variety of markets with a full-featured ARMv7-M instruction set that has been proven across a broad set of embedded applications.</li>
+    <br>
+    <li>Capture a worldwide experienced developer base to accelerate adoption of new Cortex-M3 powered products and leverage the available extensive knowledge base to reduce support costs.</li>
+    <br>
+    <li>Achieve exceptional 32-bit performance with low dynamic power, delivering leading system energy efficiency due to integrated software controlled sleep modes, extensive clock gating and optional state retention.&nbsp;</li>
+</ul>
+        </section>
+    </article>
+</div>
+<div id="c-2b309975-5cf6-4bfa-a136-34813f3477d5" class="c-widget c-horizontal-rule-widget">
+    <div class="row">
+        <div class="columns">
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+<div id="c-877ac9c4-0fd2-4be3-b2dc-f964e589f201" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class="">Highlights</h2>            
+        </section>
+    </article>
+</div>
+<div id="c-87475bed-7c16-4573-90b2-a052369c5650" class="c-widget c-generic-content-container">
+    <article class="row">
+        <section class="columns">
+            
+<div id="c-1b7db66e-d540-4a53-9e0c-a61e367d8d92" class="row">
+    <article class="large-8 columns">
+        
+
+<div id="c-7d11229a-125c-4ff0-9feb-bb1f7d300928" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class=""></h2>            <table>
+    <tbody>
+        <tr>
+            <td>Architecture</td>
+            <td>ARMv7-M Harvard<br>
+            </td>
+        </tr>
+        <tr>
+            <td>ISA Support</td>
+            <td><a href="https://www.arm.com/products/processors/instruction-set-architectures/index.php">Thumb®/Thumb-2</a></td>
+        </tr>
+        <tr>
+            <td>Pipeline</td>
+            <td>3-stage</td>
+        </tr>
+        <tr>
+            <td>Memory Protection<br>
+            </td>
+            <td>Optional 8 region MPU with sub regions and background region</td>
+        </tr>
+        <tr>
+            <td>Interrupts</td>
+            <td>Non-maskable Interrupt (NMI) + 1 to 240 physical interrupts</td>
+        </tr>
+        <tr>
+            <td>Interrupt Priority Levels</td>
+            <td>8 to 256 priority levels<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Wake-up Interrupt Controller<br>
+            </td>
+            <td>Up to 240 Wake-up Interrupts</td>
+        </tr>
+        <tr>
+            <td>Sleep Modes<br>
+            </td>
+            <td>Integrated WFI and WFE Instructions and Sleep On Exit capability.<br>
+            Sleep &amp; Deep Sleep Signals.<br>
+            Optional Retention Mode with ARM Power Management Kit</td>
+        </tr>
+        <tr>
+            <td>Bit Manipulation</td>
+            <td>Integrated Instructions &amp; Bit Banding<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Enhanced Instructions</td>
+            <td>Hardware Divide (2-12 Cycles), Single-Cycle (32x32) Multiply, Saturated Math Support<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Debug<br>
+            </td>
+            <td>Optional JTAG &amp;&nbsp;<a title="Serial-Wire Debug" target="_self" href="http://www.arm.com/products/serial-wire-debug.php">Serial-Wire Debug</a>&nbsp;Ports. Up to 8 Breakpoints and 4 Watchpoints.</td>
+        </tr>
+        <tr>
+            <td>
+            <p>Trace</p>
+            </td>
+            <td>Optional Instruction and Data&nbsp;<a title="Trace Macrocells" target="_self" href="http://www.arm.com/products/system-ip/debug-trace/trace-macrocells-etm/index.php">Trace (ETM)</a>, Data Trace (DWT), and Instrumentation Trace (ITM)</td>
+        </tr>
+    </tbody>
+</table>
+        </section>
+    </article>
+</div>
+
+    </article>
+    <article class="large-4 columns">
+        
+
+<div id="c-a492f7be-90c1-4fe4-ab86-3350e9987507" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class=""></h2>            
+        </section>
+    </article>
+</div>
+<div class="panel text-center">
+    <h2> Looking for more information on ARM Cortex-M3?</h2>
+    <p>Get in touch to speak with one of our technical experts.</p>
+    <div class="row">
+        <div class="small-9 medium-10 large-10 small-centered columns">
+            <p><a href="https://www.arm.com/contact-us/product-enquiries.php" class="button download-button expand small">Request more information</a></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+</div>
+
+    </article>
+</div>
+
+        </section>
+    </article>    
+</div>
+
+</div>
+<!-- END ProductItemContent -->
+<div id="c-2b309975-5cf6-4bfa-a136-34813f3477d5" class="c-widget c-horizontal-rule-widget">
+    <div class="row">
+        <div class="columns">
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+<div id="c-112f6221-b4b3-4055-b297-db412d0b9f1e" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class="">Applications</h2>            <p>The Cortex-M3 has been specifically developed for partners to develop high-performance low-cost devices for a broad range of embedded market segments. <br></p>
+        </section>
+    </article>
+</div>
+<div id="c-9cd7eb7f-11ac-47b8-a338-511ede7488b7" class="c-widget c-generic-content-container">
+    <article class="row">
+        <section class="columns">
+            
+<div id="c-a1e6dbd2-177a-4711-9b6c-cb5b4b8b8375" class="c-widget">
+    <article class="row">
+        <section class="columns large-4">
+            
+
+<div id="c-36e54ba9-d560-492d-80f9-9c54c720b495" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class=""></h2>            <p><img height="320" width="250" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/Icons Green RGB_Fitness Band_1.png" style="height: 320px; width: 250px;"></p>
+<h2>Wearables</h2>
+        </section>
+    </article>
+</div>
+
+        </section>
+        <section class="columns large-4">
+            
+
+<div id="c-9830c3bf-2ee1-4189-9733-b9d89a98ba37" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class=""></h2>            <p><img height="320" width="250" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/Icons Green RGB_IoT.png">&nbsp;</p>
+<h2>IoT</h2>
+        </section>
+    </article>
+</div>
+
+        </section>
+        <section class="columns large-4">
+            
+
+<div id="c-9b364e12-543a-4154-a3b2-9556d2ec1e66" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class=""></h2>            <p><img height="320" width="250" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/Icons Green RGB_Robotics.png" style="height: 320px; width: 250px;"></p>
+<h2>Motor Control</h2>
+        </section>
+    </article>
+</div>
+
+        </section>
+    </article>
+</div>
+        </section>
+    </article>    
+</div>
+<div id="c-b8cf6187-0808-41b7-ba1d-3cf00146c26f" class="c-widget c-generic-content-container">
+    <article class="row">
+        <section class="columns">
+            
+<div id="c-e6af612d-a74e-47f7-9785-dfa4cf16309a" class="c-widget">
+    <article class="row">
+        <section class="columns large-4">
+            
+
+<div id="c-6112a672-74e1-4858-9682-dcea18ae2ee4" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class=""></h2>            <p><img height="320" width="250" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/Icons Green RGB_Washing Machine.png"></p>
+<h2>Appliances</h2>
+        </section>
+    </article>
+</div>
+
+        </section>
+        <section class="columns large-4">
+            
+
+<div id="c-084a127f-461a-477d-a025-4d238309c04e" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class=""></h2>            <p><img height="320" width="250" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/Icons Green RGB_Connectivity.png"></p>
+<h2>Connectivity</h2>
+        </section>
+    </article>
+</div>
+
+        </section>
+        <section class="columns large-4">
+            
+
+<div id="c-f75ec7f2-34e8-4f08-8940-d97215329403" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class=""></h2>            <p><img height="320" width="250" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/Icons Green RGB_Home automation.png"></p>
+<h2>Smart home/building/enterprise/planet</h2>
+        </section>
+    </article>
+</div>
+
+        </section>
+    </article>
+</div>
+        </section>
+    </article>    
+</div>
+<div id="c-2b309975-5cf6-4bfa-a136-34813f3477d5" class="c-widget c-horizontal-rule-widget">
+    <div class="row">
+        <div class="columns">
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+<div id="c-7357eeb4-c1db-4d50-b5df-c5a60497c929" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class="">Key Features</h2>            <h3>Powerful debug and non-intrusive real-time trace</h3>
+<p>Comprehensive debug and trace features dramatically improve developer productivity. It is extremely efficient to develop embedded software with proper debug.</p>
+<h3>Memory Protection Unit (MPU)</h3>
+<p>Software reliability improves when each module is allowed access only to specific areas of memory required for it to operate. This protection prevents unexpected access that may overwrite critical data.</p>
+<h3>Integrated nested vectored interrupt controller (NVIC)</h3>
+<p>There is no need for a standalone external interrupt controller. Interrupt handling is taken care of by the NVIC removing the complexity of managing interrupts manually via the processor.</p>
+<h3>Thumb-2 code density</h3>
+<p>On average, the mix between 16bit and 32bit instructions yields a better code density when compared to 8bit and 16bit architectures.&nbsp;This has significant advantages in terms of reduced memory requirements and maximizing the usage of precious on-chip Flash memory.</p>
+        </section>
+    </article>
+</div>
+<div id="c-2b309975-5cf6-4bfa-a136-34813f3477d5" class="c-widget c-horizontal-rule-widget">
+    <div class="row">
+        <div class="columns">
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+<div id="c-fea9a40c-1d19-4b6e-a098-b10d5905bc11" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class="">Characteristics</h2>            <p>Performance Efficiency:&nbsp;3.34 CoreMark/MHz* &nbsp;and &nbsp;1.25 / 1.50 / 1.89 DMIPS/MHz**</p>
+<table width="100%">
+    <thead>
+        <tr>
+            <th colspan="4">ARM Cortex-M3 Implementation Data***</th>
+        </tr>
+        <tr>
+            <td><br></td>
+            <td>180ULL<br>
+            (7-track, typical 1.8v, 25°C)<br>
+            </td>
+            <td><span style="line-height: inherit; color: rgb(86, 91, 91);">90LP</span><br>
+            (7-track, typical 1.2v, 25°C)</td>
+            <td>40LP<br>
+            (9-track, typical 1.1v, 25°C)</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span style="line-height: inherit; font-family: &quot;Avenir Next LT W01 Demi&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(86, 91, 91);">Dynamic Power</span></td>
+            <td>141 µW/MHz</td>
+            <td>31 µW/MHz</td>
+            <td>11 µW/MHz</td>
+        </tr>
+        <tr>
+            <td><span style="line-height: inherit; font-family: &quot;Avenir Next LT W01 Demi&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(86, 91, 91);">Floorplanned Area</span></td>
+            <td>0.35 mm<sup>2</sup></td>
+            <td>0.09 mm<sup>2</sup></td>
+            <td>0.02 mm<sup>2</sup></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;<span style="font-size: 1rem; line-height: 1.6; font-family: inherit;">&nbsp;* see: <a href="http://www.eembc.org/benchmark/reports/benchreport.php?benchmark_seq=1687&amp;suite=CORE">http://www.eembc.org/benchmark/reports/benchreport.php?benchmark_seq=1687&amp;suite=CORE</a></span></p>
+<p>
+&nbsp; ** The first result abides by all of the “ground rules” laid out in the Dhrystone documentation, the second permits inlining of functions, not just the permitted C string libraries, while the third additionally permits simultaneous (”multi-file”) compilation. All are with the original (K&amp;R) v2.1 of Dhrystone&nbsp;</p>
+<p>&nbsp; &nbsp;*** Base usable configuration includes 1 IRQ + NMI, excludes ETM, MPU and debug</p>
+        </section>
+    </article>
+</div>
+<div id="c-2b309975-5cf6-4bfa-a136-34813f3477d5" class="c-widget c-horizontal-rule-widget">
+    <div class="row">
+        <div class="columns">
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+<div id="c-d5fe2781-76e1-4668-b72c-f29d380007d8" class="c-widget c-generic-content" data-deprecated="">
+    <article class="row">
+        <section class="columns">
+<h2 class="">Related IP</h2>            <p>The Cortex-M3 processor is usually incorporated into a SoC using a broad range of ARM technology including System IP and Physical IP. It is fully supported by ARM development tools. Related IP includes:</p>
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Compatible IP</strong><br>
+            </td>
+            <td><strong>Tools</strong><br>
+            </td>
+            <td><strong>Software</strong><br>
+            </td>
+        </tr>
+        <tr style="vertical-align: text-top;">
+            <td>
+            <p><a href="https://www.arm.com/products/processors/cortex-m/cortex-m-system-design-kit.php">Cortex-M System Design Kit (a comprehensive system solution)</a></p>
+            <p><a href="https://www.arm.com/products/system-ip/ip-tooling/amba-designer.php">ARM AMBA® Designer</a></p>
+            <p><a href="https://www.arm.com/products/system-ip/controllers/other-system-controllers.php">AMBA DMA Controllers (Direct Memory Access Controllers)</a></p>
+            </td>
+            <td>
+            <p><a href="https://developer.arm.com/products/software-development-tools/ds-5-development-studio">ARM DS-5 Development Studio </a></p>
+            <p><a href="http://www2.keil.com/mdk5">ARM Keil® MDK software development tool</a></p>
+            <p><a href="https://developer.arm.com/products/system-design/development-boards/cortex-m-prototyping-system">Cortex-M Prototyping System</a></p>
+            </td>
+            <td>
+            <p><a href="https://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php">Cortex Microcontroller Software Interface Standard </a></p>
+            <p><a href="https://www.arm.com/products/iot-solutions/mbed-iot-device-platform">ARM mbed™ IoT Device Platform</a></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+        </section>
+    </article>
+</div>
+
+
+<div id="c-91edfa4c-f81e-40d0-a24e-229964247a36" class="c-widget c-hero c-hero-header" style="" data-equalizer-watch="">
+    <article class="row">
+        <section class="columns">
+            <h2 class="c-hero__title">Support</h2>
+            <h4 class="c-hero__subtitle"></h4>
+            <p class="c-hero__description"></p>
+            <div class="c-hero__content"><p>ARM training courses and Active Assist on-site system-design advisory services enable licensees to efficiently integrate the Cortex-M3 processor into their design to realize maximum system performance with lowest risk and fastest time-to-market.</p>
+<p><a href="https://www.arm.com/support/training/index.php">
+<button class="hero__button hero-widget__button button small" id="DesignStart_Learnmore" type="submit" value="Login">ARM training courses</button></a>
+<a href="https://www.arm.com/support/active-assist.php">
+<button class="hero__button hero-widget__button button small" id="Register" type="submit" value="Login">Active Assist</button></a></p></div>
+            <p></p>
+        </section>
+    </article>
+
+    
+</div>
+<div class="row">
+    <div class="large-12 columns">
+        <ul class="small-block-grid-1 medium-block-grid-2  spacing-3 large-block-grid-4">
+            <li class="medium-text-center small-text-left">
+    <img src="./Cortex-M _ Cortex-M3 – Arm Developer_files/technical-reference-manual.svg" alt="">
+</li>
+<li>
+    <h4>Cortex-M3 Technical Reference Manual</h4>
+    <p>For system designers, system integrators, verification engineers and software programmers who are building a Cortex-M3 based SoC.<br><br></p>
+    <a href="https://developer.arm.com/docs/100165_0201/latest/introduction" class="button small">Technical Reference Manual</a>
+</li>
+<li class="medium-text-center small-text-left">
+    <img src="./Cortex-M _ Cortex-M3 – Arm Developer_files/Programmers-Guide.svg" alt="">
+</li>
+<li>
+    <h4>White Paper: ARMv8-M Architecture</h4>
+    <p>This White Paper compares the features of various Cortex-M processors and describes how to select the right processor for the application.<br><br></p>
+    <a href="https://community.arm.com/processors/b/blog/posts/whitepaper---armv8-m-architecture-technical-overview" class="button small">Get the White Paper</a>
+</li>
+<li class="medium-text-center small-text-left">
+    <img src="./Cortex-M _ Cortex-M3 – Arm Developer_files/software-optimization-guide.svg" alt="">
+</li>
+<li>
+    <h4>Cortex-M System Design Kit (CMSDK)</h4>
+    <p>CMSDK is a comprehensive system solution designed to work seamlessly with Cortex-M processors out-of-the-box. <br><br></p>
+    <a href="http://infocenter.arm.com/help/topic/com.arm.doc.uan0016a/cortex_a72_software_optimization_guide_external.pdf" class="button small">Software Optimization Guide</a>
+</li>
+<li class="medium-text-center small-text-left">
+    <img src="./Cortex-M _ Cortex-M3 – Arm Developer_files/ds-tools.svg" alt="">
+</li>
+<li>
+    <h4>Embedded Development Tools for Cortex-M Series</h4>
+    <p>ARM and its ecosystem partners provide a wide range of tools for embedded software development on ARM Cortex-M processors.<br><br></p>
+    <a href="https://developer.arm.com/products/software-development-tools/software-tools-for-cortex-m" class="button small">Software Tools for Cortex-M</a>
+</li>
+
+        </ul>
+    </div>
+</div><div class="row">
+    <div class="large-12 columns">
+        <ul class="small-block-grid-1 medium-block-grid-2  spacing-3 large-block-grid-4">
+            <li class="medium-text-center small-text-left">
+    <img src="./Cortex-M _ Cortex-M3 – Arm Developer_files/Icons Green RGB_Time to Market.png" alt="">
+</li>
+<li>
+    <h4>Design support with Active Assist</h4>
+    <p>Active Assist on-site design review service gives licensees confidence that their Cortex-M3 CPU is implemented efficiently, to provide maximum system performance, with lowest risk and fastest time-to-market.<br><br></p>
+    <a href="https://www.arm.com/support/active-assist.php" class="button small">Explore design services</a>
+</li>
+<li class="medium-text-center small-text-left">
+    <img src="./Cortex-M _ Cortex-M3 – Arm Developer_files/Icon - customer.png" alt="">
+</li>
+<li>
+    <h4>Questions? Request more information</h4>
+    <p>Learn more about Cortex-M3, ARM’s&nbsp; industry-leading 32-bit processor for highly deterministic real-time applications. Contact us to speak with our technical team.<br><br></p>
+    <a href="https://www.arm.com/contact-us/product-enquiries.php" class="button small">Find out more</a>
+</li>
+
+        </ul>
+    </div>
+</div>
+</main>
+
+
+<footer class="c-footer u-no-print" id="footer" style="padding-bottom: 106px;">
+
+    <!-- START Newsletter -->
+    <div class="c-footer__newsletter">
+        <div class="row">
+            <div class="columns">
+                <!-- START NewsLetterHorizontal -->
+<div class="c-widget c-newsletter-widget is-horizontal">
+    
+    
+    <!-- Newsletter form -->
+    <div class="row">
+        <div class="large-4 columns">
+            <h4 class="c-newsletter-widget__title">Developer Newsletter</h4>
+            <span class="c-newsletter-widget__description">Sign up for news and updates.</span>
+        </div>
+        <div class="large-8 columns">
+            <div class="row">
+                <form class="js-newsletter__form" data-abide="" novalidate="novalidate">
+                    <div class="large-3 columns">
+                        <label for="news_sign_first_name" class="hide">First Name</label>
+                        <input type="text" name="First Name" id="news_sign_first_id" class="input" placeholder="First Name" required="">
+                        <small class="error">Please enter your first name.</small>
+                    </div>
+                    <div class="large-3 columns">
+                        <label for="news_sign_last_name" class="hide">Last Name</label>
+                        <input type="text" name="Last Name" id="news_sign_last_id" class="input" placeholder="Last Name" required="">
+                        <small class="error">Please enter your last name.</small>
+                    </div>
+                    <div class="large-4 columns">
+                        <label for="news_sign_email_address" class="hide">E-Mail</label>
+                        <input type="email" name="Email Address" id="news_sign_email_address_id" class="input" placeholder="E-Mail" required="">
+                        <small class="error">Please enter your e-mail.</small>
+                    </div>
+                    <div class="large-2 columns end">
+                        <input type="submit" value="Sign up" class="postfix small button expand">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END newsletter form -->
+
+    <!-- START newsletter modal window -->
+    <div class="reveal-modal medium" id="newsletterModal" data-reveal="" aria-hidden="true" role="dialog">
+        <div class="modal-hider">
+            <iframe width="100%" height="100%" data-src="/forms/newsletter-signup" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/saved_resource.html"></iframe>
+        </div>
+        <p>
+            <a class="close-reveal-modal" aria-label="Close">×</a>
+        </p>
+    </div>
+    <!-- END newsletter modal window -->
+
+</div>
+<!-- End NewsLetterHorizontal -->
+
+            </div>
+        </div>
+    </div>
+    <!-- END Newsletter -->
+
+    <!-- START Internal Footer -->
+    <div class="c-footer__internal">
+        <nav class="row">
+            <div class="large-3 columns spacing-3 pushing-3">
+                <!-- START Footer Section -->
+            <h3 class="c-footer-section__title">
+Arm Developer            </h3>
+            <div class="row">
+                <div class="columns">
+                    <ul class="o-list c-footer-section__list">
+                            <li><a class="c-footer-section__link" href="https://developer.arm.com/academia" title="Academia">Academia</a></li>
+    <li><a class="c-footer-section__link" href="https://developer.arm.com/embedded" title="Embedded Software Developers">Embedded Software Developers</a></li>
+    <li><a class="c-footer-section__link" href="https://developer.arm.com/graphics" title="Graphics and Multimedia Development">Graphics and Multimedia Development</a></li>
+    <li><a class="c-footer-section__link" href="https://developer.arm.com/hpc" title="High Performance Computing">High Performance Computing</a></li>
+    <li><a class="c-footer-section__link" href="https://developer.arm.com/open-source" title="Linux and Open Source">Linux and Open Source</a></li>
+    <li><a class="c-footer-section__link" href="https://developer.arm.com/soc" title="SoC Design">SoC Design</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <h3 class="c-footer-section__title">
+                    <a href="https://developer.arm.com/products/architecture" title="Architecture" class="home">Architecture</a>
+            </h3>
+            <div class="row">
+                <div class="columns">
+                    <ul class="o-list c-footer-section__list">
+                        
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/architecture/a-profile" title="A-Profile">A-Profile</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/architecture/r-profile" title="R-Profile">R-Profile</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/architecture/m-profile" title="M-Profile">M-Profile</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/architecture/instruction-sets" title="Instruction Sets">Instruction Sets</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/architecture/amba-protocol" title="AMBA Protocol">AMBA Protocol</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/architecture/system-architecture" title="System Architecture">System Architecture</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/architecture/debug-architecture" title="Debug Architecture">Debug Architecture</a></li>
+
+                    </ul>
+                </div>
+            </div>
+<!-- END Footer Section -->
+
+            </div>
+            <div class="large-offset-1 large-8 columns spacing-3 pushing-3">
+                <!-- START Internal Right -->
+
+
+            <h3 class="c-footer-section__title">
+                    <a href="https://developer.arm.com/products" title="IP Products" class="home">IP Products</a>
+            </h3>
+<div class="row">                <div class="large-4 medium-6 columns left">
+                    <ul class="o-list c-footer-section__list">
+                        <li>
+
+                            <a href="https://developer.arm.com/products/processors" title="Processors">
+                                    <strong class="c-footer-section__subtitle">Processors</strong>
+                            </a>
+                        </li>
+                        
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/processors/cortex-a" title="Cortex-A">Cortex-A</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/processors/cortex-r" title="Cortex-R">Cortex-R</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/processors/cortex-m" title="Cortex-M">Cortex-M</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/processors/classic-processors" title="Classic Processors">Classic Processors</a></li>
+
+                    </ul>
+                </div>
+                <div class="large-4 medium-6 columns left">
+                    <ul class="o-list c-footer-section__list">
+                        <li>
+
+                            <a href="https://developer.arm.com/products/physical-ip" title="Physical IP">
+                                    <strong class="c-footer-section__subtitle">Physical IP</strong>
+                            </a>
+                        </li>
+                        
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/physical-ip/logic-ip" title="Logic IP">Logic IP</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/physical-ip/memory-compilers" title="Memory Compilers">Memory Compilers</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/physical-ip/interface-ip" title="Interface IP">Interface IP</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/physical-ip/pop-ip" title="POP IP">POP IP</a></li>
+
+                    </ul>
+                </div>
+                <div class="large-4 medium-6 columns left">
+                    <ul class="o-list c-footer-section__list">
+                        <li>
+
+                            <a href="https://developer.arm.com/products/system-ip" title="System IP">
+                                    <strong class="c-footer-section__subtitle">System IP</strong>
+                            </a>
+                        </li>
+                        
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-ip/corelink-interconnect" title="CoreLink Interconnect">CoreLink Interconnect</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-ip/system-controllers" title="CoreLink System Controllers">CoreLink System Controllers</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-ip/coresight-debug-and-trace" title="CoreSight Debug and Trace">CoreSight Debug and Trace</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-ip/memory-controllers" title="Memory Controllers">Memory Controllers</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-ip/trustzone-cryptocell" title="TrustZone CryptoCell">TrustZone CryptoCell</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-ip/free-system-ip-whitepapers" title="Free System IP Whitepapers">Free System IP Whitepapers</a></li>
+
+                    </ul>
+                </div>
+</div><div class="row">                <div class="large-4 medium-6 columns left">
+                    <ul class="o-list c-footer-section__list">
+                        <li>
+
+                            <a href="https://developer.arm.com/products/graphics-and-multimedia" title="Graphics and Multimedia Processors">
+                                    <strong class="c-footer-section__subtitle">Graphics and Multimedia Processors</strong>
+                            </a>
+                        </li>
+                        
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/graphics-and-multimedia/mali-camera" title="Mali Camera">Mali Camera</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/graphics-and-multimedia/mali-gpus" title="Mali GPUs">Mali GPUs</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/graphics-and-multimedia/mali-display-processors" title="Mali Display Processors">Mali Display Processors</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/graphics-and-multimedia/mali-video-processors" title="Mali Video Processors">Mali Video Processors</a></li>
+
+                    </ul>
+                </div>
+                <div class="large-4 medium-6 columns left">
+                    <ul class="o-list c-footer-section__list">
+                        <li>
+
+                            <a href="https://developer.arm.com/products/system-design" title="System Design Tools">
+                                    <strong class="c-footer-section__subtitle">System Design Tools</strong>
+                            </a>
+                        </li>
+                        
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-design/system-design-kits" title="System Design Kits">System Design Kits</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-design/system-guidance" title="System Guidance">System Guidance</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-design/subsystems" title="Subsystems">Subsystems</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-design/socrates-system-builder" title="Socrates System Builder">Socrates System Builder</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-design/fast-models" title="Fast Models">Fast Models</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-design/cycle-models" title="Cycle Models">Cycle Models</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-design/development-boards" title="Development Boards">Development Boards</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-design/fixed-virtual-platforms" title="Fixed Virtual Platforms">Fixed Virtual Platforms</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/system-design/vstream" title="VSTREAM">VSTREAM</a></li>
+
+                    </ul>
+                </div>
+                <div class="large-4 medium-6 columns left">
+                    <ul class="o-list c-footer-section__list">
+                        <li>
+
+                            <a href="https://developer.arm.com/products/software-development-tools" title="Software Tools">
+                                    <strong class="c-footer-section__subtitle">Software Tools</strong>
+                            </a>
+                        </li>
+                        
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/software-development-tools/hpc" title="HPC">HPC</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/software-development-tools/compilers" title="Compilers">Compilers</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/software-development-tools/ds-5-development-studio" title="DS-5 Development Studio">DS-5 Development Studio</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/software-development-tools/keil-mdk" title="Keil MDK">Keil MDK</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/software-development-tools/debug-probes-and-adapters" title="Debug Probes and Adapters">Debug Probes and Adapters</a></li>
+        <li><a class="c-footer-section__link" href="https://developer.arm.com/products/software-development-tools/graphics-development-tools" title="Graphics Development Tools">Graphics Development Tools</a></li>
+
+                    </ul>
+                </div>
+</div><!-- END Internal Right -->
+
+            </div>
+        </nav>
+    </div>
+    <!-- END Internal Footer -->
+
+    <!-- START External Footer -->
+    <div class="c-footer__external">
+
+        <!-- START External links -->
+        <nav class="row">
+            <div class="large-4 spacing-3 columns">
+                <!-- START Footer Section -->
+            <h3 class="c-footer-section__title">
+Arm Corporate            </h3>
+            <div class="row">
+                <div class="columns">
+                    <ul class="o-list c-footer-section__list">
+                            <li><a class="c-footer-section__link" href="http://www.arm.com/" title="arm.com">arm.com</a></li>
+    <li><a class="c-footer-section__link" href="https://www.arm.com/company" title="Company Profile">Company Profile</a></li>
+    <li><a class="c-footer-section__link" href="http://www.arm.com/careers/" title="Careers">Careers</a></li>
+    <li><a class="c-footer-section__link" href="https://www.arm.com/news" title="Newsroom">Newsroom</a></li>
+    <li><a class="c-footer-section__link" href="https://www.arm.com/company/contact-us/offices" title="Our Offices">Our Offices</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+<!-- END Footer Section -->
+
+            </div>
+            <!-- START External Right -->
+        <div class="large-4 spacing-3 columns">
+                <h3 class="c-footer-section__title">
+More                </h3>
+                <div class="row">
+                    <div class="columns">
+                        <ul class="o-list c-footer-section__list">
+                                <li><a class="c-footer-section__link" href="http://community.arm.com/" title="Arm Community">Arm Community</a></li>
+    <li><a class="c-footer-section__link" href="https://developer.arm.com/support" title="Support">Support</a></li>
+    <li><a class="c-footer-section__link" href="https://silver.arm.com/" title="Customer Portal">Customer Portal</a></li>
+    <li><a class="c-footer-section__link" href="https://developer.arm.com/products/designstart" title="DesignStart">DesignStart</a></li>
+    <li><a class="c-footer-section__link" href="http://www.keil.com/" title="Keil Tools">Keil Tools</a></li>
+    <li><a class="c-footer-section__link" href="http://malideveloper.arm.com/" title="Mali Developer">Mali Developer</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="large-4 spacing-3 columns">
+                <h3 class="c-footer-section__title">
+Social                </h3>
+                <div class="row">
+                    <div class="columns">
+                        <ul class="o-list c-footer-section__list">
+                                <li><a class="c-footer-section__link" href="https://www.facebook.com/pg/ARM-71946799587/" title="Facebook">Facebook</a></li>
+    <li><a class="c-footer-section__link" href="http://www.linkedin.com/company/Arm" title="LinkedIn">LinkedIn</a></li>
+    <li><a class="c-footer-section__link" href="https://twitter.com/Arm" title="Twitter">Twitter</a></li>
+    <li><a class="c-footer-section__link" href="https://www.youtube.com/user/Armflix" title="YouTube">YouTube</a></li>
+    <li><a class="c-footer-section__link" href="http://i.youku.com/armchina" title="优酷 (YouKu)">优酷 (YouKu)</a></li>
+    <li><a class="c-footer-section__link" href="http://weibo.com/armcn" title="@Arm中国 (Arm Sina)">@Arm中国 (Arm Sina)</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+        </div>
+<!-- END External Right -->
+
+        </nav>
+        <!-- END External Links -->
+
+        <!-- START Trademark Statement -->
+        <div class="row">
+            <div class="columns spacing-1">
+                <div class="c-footer__trademark">
+                    AMBA, Arm, Arm7, Arm9, Arm11, Artisan, big.LITTLE, Cordio, CoreLink, CoreSight,
+Cortex, DesignStart, Jazelle, Keil, Mali, Mbed, NEON, POP, SecurCore, Socrates,
+Thumb, TrustZone, ULINK, µVision, Versatile are trademarks or registered trademarks
+of Arm Limited (or its subsidiaries) in the US and/or elsewhere.
+The related technology may be protected by any or all of patents, copyrights,
+designs and trade secrets. All rights reserved. All other brands or product 
+names are the property of their respective holders. <a href="http://www.arm.com/about/trademarks/">Further Detail</a>.
+                </div>
+            </div>
+        </div>
+        <!-- END Trademark Statement -->
+
+        <!-- START Legal -->
+        <div class="c-legal row" role="contentinfo">
+            <div class="large-1 spacing-3 columns">
+                <div class="c-legal__logo"></div>
+            </div>
+            <div class="large-8 spacing-3 columns">
+                    <p class="c-legal__links">
+
+                <a href="https://www.arm.com/company/policies/cookies">Cookie Policy</a>
+ |                <a href="https://www.arm.com/company/policies/terms-and-conditions">Terms of Use</a>
+ |                <a href="https://www.arm.com/company/policies/privacy">Privacy Policy</a>
+ |                <a href="https://www.arm.com/company/policies/accessibility">Accessibility</a>
+ |                <a href="https://login.arm.com/subscriptions.php">Subscription Center</a>
+ |                <a href="https://www.arm.com/company/policies/trademarks">Trademarks</a>
+        <br class="hide-for-large-up">
+    </p>
+
+            </div>
+            <div class="large-3 spacing-3 columns">
+                <p class="c-legal__copyright">Copyright © 1995-2017 Arm Limited (or its affiliates). All rights reserved. </p>
+            </div>
+        </div>
+        <!-- END Legal -->
+
+    </div>
+    <!-- END External Footer -->
+
+</footer>
+
+
+
+    <div class="c-component c-policies u-no-print" role="contentinfo">
+            <div class="c-component c-policy c-cookie-policy js-policy" data-key="com.arm.accepted.cookie" data-updated="24/08/2016 12:33:12" data-iscookiepolicy="true" title="Cookie Policy" role="alert" style="">
+        <div class="row">
+            <div class="small-12 large-9 small-text-center large-text-left columns">
+                <p>Important Information for the ARM website. This site uses cookies to store information on your computer. By continuing to use our site, you consent to our cookies. If you are not happy with the use of these cookies, please review our <a class="cookie-link" target="_blank" href="http://www.arm.com/about/cookie_policy.php" title="Cookie Policy">Cookie Policy</a> to learn how they can be disabled. By disabling cookies, some features of the site will not work.</p>
+            </div>
+            <div class="small-12 large-3 text-center columns">
+                <a class="tiny button c-policy__accept-button js-accept-policy" tabindex="1" title="Accept and hide this message ">Accept and hide this message  <i class="fa fa-times"></i></a>
+            </div>
+        </div>
+    </div>
+
+        
+    </div>
+
+<script type="text/javascript" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/embed.js"></script>
+
+
+    
+
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/modernizr"></script>
+
+
+
+<script type="text/javascript">
+    if (Modernizr && !Modernizr.svg) {
+        var imgs = document.getElementsByTagName('img');
+        var svgExtension = /.*\.svg$/;
+        var l = imgs.length;
+        for (var i = 0; i < l; i++) {
+            if (imgs[i].src.match(svgExtension)) {
+                imgs[i].src = imgs[i].src.slice(0, -3) + 'png';
+            }
+        }
+    }
+</script>
+
+
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/jquery-1.12.4.min.js"></script>
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/foundation.min.js"></script>
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/moment.min.js"></script>
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/jquery.rss.js"></script>
+
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/clipboard"></script>
+
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/placeholder"></script>
+
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/waypoints"></script>
+
+
+
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/common.js"></script>
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/app.bundle.js"></script>
+
+
+
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/jquery-ui"></script>
+
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/jqueryval"></script>
+
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/wffm.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("form[data-wffm]").each(function() { $(this).wffmForm(); });
+  });
+</script>
+
+<script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/munchkin(1).js" type="text/javascript"></script>
+<script type="text/javascript">
+    Munchkin.init('312-SAX-488', {'asyncOnly': true});
+</script>
+
+
+
+<link rel="stylesheet" type="text/css" href="./Cortex-M _ Cortex-M3 – Arm Developer_files/1.css">
+
+
+    
+    
+
+
+
+<iframe src="./Cortex-M _ Cortex-M3 – Arm Developer_files/save-product.html" id="save-frame" style="top: 0px; right: 0px; display: none; width: 65px; height: 45px; z-index: 2147483647; border-style: none; overflow: visible; clip: initial; position: fixed !important;"></iframe><iframe src="./Cortex-M _ Cortex-M3 – Arm Developer_files/index.html" id="save-item-frame" scrolling="no" style="width: 55px; top: 0px; right: 0px; display: none; z-index: 2147483647; border-style: none; overflow: hidden; clip: initial; position: fixed !important; height: 50px;"></iframe> 
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","774089972657587");fbq("track","PageView");</script> 
+<noscript>&lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=774089972657587&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;</noscript> 
+ 
+ <script type="text/javascript" id="">document.cookie="previousPage\x3d "+google_tag_manager["GTM-K25LQR"].macro('gtm4')+"; path\x3d/;";</script><div id="droplr-chrome-extension-is-installed" style="display: none;"></div><script type="text/javascript" async="" src="./Cortex-M _ Cortex-M3 – Arm Developer_files/generic1501840286176.js"></script><script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/adsct" type="text/javascript"></script><script src="./Cortex-M _ Cortex-M3 – Arm Developer_files/saved_resource" type="text/javascript"></script><span><div id="KampyleAnimationContainer" style="z-index: 2147483000; border: 0px; position: fixed; display: block; width: 0px; height: 0px;"></div></span><span id="kampyleButtonContainer"><button id="nebula_div_btn" style="border: none; position: fixed !important; margin-top: 0px;" alt="Feedback" tabindex="0" class="kampyle_vertical_button kampyle_right  noOutline "><div class="kampyle_button"></div><div class="kampyle_button-text">Feedback</div></button></span><img src="./Cortex-M _ Cortex-M3 – Arm Developer_files/seg" width="1" height="1" border="0" alt="" style="display: none;"></body></html>
